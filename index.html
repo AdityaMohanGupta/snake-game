@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #1a1a1a;
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+
+        .canvas-container {
+            background: linear-gradient(145deg, #232323, #1f1f1f);
+            padding: 1rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        canvas {
+            background-color: black;
+            border: 3px solid #FFD700;
+            border-radius: 8px;
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 1024px) {
+            canvas {
+                width: 100%;
+                height: auto;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Snake Game</h1>
+    <div class="canvas-container">
+        <canvas width="1000" height="600"></canvas>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
